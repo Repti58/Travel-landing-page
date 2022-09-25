@@ -79,6 +79,25 @@ body {
   left: 0;
 }
 
+.arrow-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #006dfe;
+  padding-right: 59px;
+  background: url(../img/svg/arrow-right.svg) no-repeat 95% center;
+  transition: 0.2s all;
+}
+
+.arrow-link:hover,
+.arrow-link:active,
+.arrow-link:focus {
+  background: url(../img/svg/arrow-right.svg) no-repeat right center;
+  color: #61a6ff;
+}
+
 /* header styles start */
 .header {
   position: fixed;
@@ -254,27 +273,13 @@ body {
   line-height: 24px;
   margin-bottom: 39px;
 }
-
-.benefits__card-more {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #006dfe;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding-right: 59px;
-  background: url(../img/svg/arrow-right.svg) no-repeat 95% center;
-  transition: 0.2s all;
-}
-
-.benefits__card-more:hover,
-.benefits__card-more:focus,
-.benefits__card-more:active {
-  background: url(../img/svg/arrow-right.svg) no-repeat right center;
-}
 /* benefits styles end */
 
 /* places styles start */
+.places {
+  margin-bottom: 100px;
+}
+
 .places__caption {
   display: flex;
   flex-wrap: wrap;
@@ -284,29 +289,10 @@ body {
   margin-bottom: 36px;
 }
 
-.places__view-all {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #006dfe;
-  padding-right: 59px;
-  background: url(../img/svg/arrow-right.svg) no-repeat 95% center;
-  transition: 0.2s all;
-}
-
-.places__view-all:hover,
-.places__view-all:active,
-.places__view-all:focus {
-  background: url(../img/svg/arrow-right.svg) no-repeat right center;
-}
-
 .places__cards {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
-  margin-bottom: 100px;
 }
 
 .places__card {
@@ -322,7 +308,7 @@ body {
 }
 
 .places__card:hover .places__card-pic {
-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .places__card::before {
@@ -340,11 +326,11 @@ transform: scale(1.05);
 .places__card-pic {
   width: 100%;
   object-fit: cover;
-  transition: .3s all;
+  transition: 0.3s all;
 }
 
 .places__card-pic_size-lg {
-  height: 354px;  
+  height: 354px;
 }
 
 .places__card-pic_size-sm {
@@ -371,3 +357,42 @@ transform: scale(1.05);
   z-index: 4;
 }
 /* places styles end */
+
+/* tours styles start */
+.tours {
+  margin-bottom: 139px;
+}
+
+.tours__tour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 68px;
+  align-items: center;
+  margin-bottom: 77px;
+}
+
+.tour__info {
+  padding: 0 47px;
+}
+
+.tour__info-title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  padding-bottom: 85px;
+}
+
+.tour__info-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 58px;
+}
+
+.tour__info-more {
+  font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+}
+/* tours styles end */
