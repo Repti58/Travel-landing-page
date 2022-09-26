@@ -500,3 +500,22 @@ body {
   background: #065ccd;
 }
 /* top styles end */
+
+
+/* videos styles start */
+.videos {
+  position: relative;
+}
+
+.videos__item {
+  padding-top: 56.25%;
+}
+
+.videos__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* videos styles end */
