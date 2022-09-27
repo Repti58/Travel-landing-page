@@ -52,11 +52,13 @@ body {
 .wrapper {
   max-width: 1060px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .wrapper-full {
   max-width: 1262px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section__title {
@@ -111,6 +113,7 @@ body {
 
 .header_active {
   background: rgba(14, 29, 40, 0.9);
+  box-shadow: 0 0 10px #0e1d28;
 }
 
 .header__wrapper {
@@ -153,6 +156,21 @@ body {
   opacity: 0.75;
 }
 
+.header__burger {
+  display: none;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 30px;
+}
+
+.burger__line {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #ffffff;
+}
 /* header styles end */
 
 /* intro styles start */
@@ -447,7 +465,7 @@ body {
   height: 55px;
   align-items: center;
   width: 100%;
-  padding: 16px 25px;
+  padding: 0 25px;
   background: rgba(21, 24, 36, 0.6);
 }
 
@@ -611,4 +629,83 @@ z-index: 5;
   color: #ffffff;
   text-decoration: none;
 }
+
+.footer__menu-link:hover,
+.footer__menu-link:focus,
+.footer__menu-link:active {
+  opacity: 0.75;
+}
 /* footer styles end */
+
+/* media start */
+@media screen and (max-width: 767px) {
+  .header__burger {
+    display: flex;
+  }
+
+  .header__nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0e1d28;
+    padding: 75px;
+    transform: translateX(100%);
+  }  
+
+  .header__nav-active {
+    transform: translateX(0);
+  }
+
+  .header__nav-active-transition {
+    transition: .2s;
+  }
+
+
+
+  .header__list {
+    flex-direction: column;
+  }
+
+  .header__item {
+    margin-bottom: 30px;
+  }
+
+  .header__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .header__link {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .header__nav-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: solid #ffffff;
+    border-radius: 50%;
+  }
+
+  .header__nav-close-line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    top: 50%;
+  }
+
+  .header__nav-close-line:first-child {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .header__nav-close-line:last-child {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}
+/* media end */
