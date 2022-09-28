@@ -404,7 +404,7 @@ body {
 .tours__tour {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0 68px;
+  gap: 77px 68px;
   align-items: center;
   margin-bottom: 77px;
 }
@@ -462,11 +462,10 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 55px;
+  height: 15%;
   align-items: center;
   width: 100%;
   padding: 0 25px;
-  background: rgba(21, 24, 36, 0.6);
 }
 
 .card__stats-title {
@@ -524,13 +523,15 @@ body {
 /* videos styles start */
 .videos {
   width: 100%;
+  margin-top: 1px;
+
 }
 
 .video__wrapper {
   /* max-width: 1440px; */
   /* max-height: 300px; */
   margin: 0 auto;
-  position: relative;
+  position: relative; 
 }
 
 .video__wrapper::before {
@@ -567,6 +568,7 @@ z-index: 5;
   left: 0;
   width: 100%;
   height: 100%;
+  margin-top: 1px;
 }
 /* videos styles end */
 
@@ -638,6 +640,78 @@ z-index: 5;
 /* footer styles end */
 
 /* media start */
+@media screen and (max-width: 960px) {
+  .intro {
+    min-height: 0;
+    max-height: 70vh;
+  }
+
+  .benefits__wrap {
+    margin-bottom: 80px;
+  }
+
+  .benefits__title {
+    padding-left: 20px;
+  }
+
+  .benefits__cards {
+    padding: 0 20px;
+    margin-top: 1px;
+  }
+
+  .benefits__card {
+    padding-bottom: 20px;
+  }
+
+  .places__card_size-lg {
+    grid-column: span 6;
+  }
+  .places__card_size-sm {
+    grid-column: span 6;
+  }
+
+  .places__card-pic_size-sm {
+    height: 354px;
+  }
+
+  .tours {
+    margin-bottom: 100px;
+  }
+
+  .tours__tour {
+    gap: 30px;
+  }
+
+  .tour__info {
+    padding: 0 15px;
+  }
+
+  .tour__info-title {
+    padding-bottom: 30px;
+  }
+
+  .tour__info-desc {
+    padding-bottom: 20px;
+  }
+
+  .top__cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 65px 30px;
+  }
+
+  .card__pic-thumb {
+    width: 100%;
+  }
+
+  .card__pic {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    padding: 60px 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header__burger {
     display: flex;
@@ -652,17 +726,15 @@ z-index: 5;
     background-color: #0e1d28;
     padding: 75px;
     transform: translateX(100%);
-  }  
+  }
 
   .header__nav-active {
     transform: translateX(0);
   }
 
   .header__nav-active-transition {
-    transition: .2s;
+    transition: 0.2s;
   }
-
-
 
   .header__list {
     flex-direction: column;
