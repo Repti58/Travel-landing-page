@@ -585,9 +585,14 @@ z-index: 5;
   margin: 0 auto; */
 }
 
-.footer__logo {
+.footer__logo-wrap {
   width: 50%;
   /* position: relative; */
+}
+
+.footer__logo {
+  width: 170px;
+  height: 64px;
 }
 
 .footer__logo-pic {
@@ -875,9 +880,13 @@ z-index: 5;
     margin-bottom: 70px;
   }
 
-  .footer__logo {
-    padding-bottom: 20px;
+  .footer__logo-wrap {
+    margin-bottom: 20px;
   }
+
+  .footer__logo {    
+    margin: 0 auto;
+  } 
 
   .footer__wrap {
     flex-direction: column;
@@ -911,6 +920,10 @@ z-index: 5;
  
   .footer {
     padding-bottom: 0;
+  }
+
+  .footer__logo-link {
+    margin: auto 0;
   }
 }
 /* media end */
