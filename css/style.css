@@ -544,7 +544,6 @@ body {
 
 /* intro styles start */
 .intro {
-  min-height: 100vh;
   background: url("../img/intro-bg-min.jpg") no-repeat center;
   background-size: cover;
   padding-bottom: 223px;
