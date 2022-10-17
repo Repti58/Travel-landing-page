@@ -7,10 +7,7 @@
 - **Technologies used: HTML, CSS, JavaScript**
 
 ## Appearance:
-<a href="https://repti85.github.io/Portfolio-site">
-  <img src="img/portfolio-fullscreen-light.png">
-  <img src="img/portfolio-fullscreen-dark.png"> 
+<a href="https://repti85.github.io/Travel-landing-page/">
+  <img src="img/screenshot.png">  
 </a>
 
-## Performance:
-<img src="img/performance.png">
