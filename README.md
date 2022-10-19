@@ -1,4 +1,12 @@
-<h1 align="center">Travel landing page</h1>
+<h1 align="center">
+<a href="https://repti85.github.io/Travel-landing-page/">
+Travel landing page
+</a>
+</h1>
+
+<p align="center">
+https://repti85.github.io/Travel-landing-page
+</p>
 
 ## Features:
 - **Figma adaptive layout**
