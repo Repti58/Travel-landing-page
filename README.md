@@ -1,11 +1,11 @@
 <h1 align="center">
-<a href="https://repti85.github.io/Travel-landing-page/">
+<a href="https://repti58.github.io/Travel-landing-page/">
 Travel landing page
 </a>
 </h1>
 
 <p align="center">
-https://repti85.github.io/Travel-landing-page
+https://repti58.github.io/Travel-landing-page
 </p>
 
 ## Features:
@@ -15,7 +15,7 @@ https://repti85.github.io/Travel-landing-page
 - **Technologies used: HTML, CSS, JavaScript**
 
 ## Appearance:
-<a href="https://repti85.github.io/Travel-landing-page/">
+<a href="https://repti58.github.io/Travel-landing-page/">
   <img src="img/screenshot.png">  
 </a>
 
